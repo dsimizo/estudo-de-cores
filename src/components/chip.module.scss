@@ -1,4 +1,4 @@
-%chip {
+.chip {
   border-radius: 1rem;
   color: white;
   font-size: .9rem;
@@ -11,299 +11,31 @@
   /* Tooltip text */
   .tooltiptext {
     visibility: hidden;
-    width: 120px;
     background-color: silver;
     color: #fff;
     text-align: center;
-    padding: 5px 0;
+    padding: .5rem .8rem;
     border-radius: 6px;
     margin-bottom: .4rem;
+    transition: all 0.2s ease;
     
     /* Position the tooltip text - see examples below! */
     position: absolute;
     z-index: 1;
-    width: 120px;
+    min-width: 120px;
     bottom: 100%;
     left: 50%; 
     margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
-  }
-
-  .tooltiptext::after {
-    content: " ";
-    position: absolute;
-    top: 100%; /* At the bottom of the tooltip */
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: black transparent transparent transparent;
+    white-space: nowrap;
   }
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
-%chip:hover {
+.chip:hover {
   .tooltiptext {
     visibility: visible;
   }
 }
 
 
-.white {
-  @extend %chip;
-  background-color: white;
-  color: grey;
-  border: 1px solid grey;
-}
-  
-.lightcoral {
-  @extend %chip;
-  background-color: lightcoral;
-}
 
-.red {
-  @extend %chip;
-  background-color: red;
-}
-
-.green {
-  @extend %chip;
-  background-color: green;
-}
-
-.blue {
-  @extend %chip;
-  background-color: blue;
-}
-
-.darkblue {
-  @extend %chip;
-  background-color: darkblue;
-}
-
-.skyblue {
-  @extend %chip;
-  background-color: skyblue;
-}
-
-.lightblue {
-  @extend %chip;
-  background-color: lightblue;
-}
-
-.maroon {
-  @extend %chip;
-  background-color: maroon;
-}
-
-.darkred {
-  @extend %chip;
-  background-color: darkred;
-}
-
-.orange {
-  @extend %chip;
-  background-color: orange;
-}
-
-.midnightblue {
-  @extend %chip;
-  background-color: midnightblue;
-}
-
-.darkblue {
-  @extend %chip;
-  background-color: darkblue;
-}
-
-.navy {
-  @extend %chip;
-  background-color: navy;
-}
-
-.mediumblue {
-  @extend %chip;
-  background-color: mediumblue;
-}
-
-.seagreen {
-  @extend %chip;
-  background-color: seagreen;
-}
-
-.teal {
-  @extend %chip;
-  background-color: teal;
-}
-
-.cadetblue {
-  @extend %chip;
-  background-color: cadetblue;
-}
-
-.darkcyan {
-  @extend %chip;
-  background-color: darkcyan;
-}
-
-.cornflowerblue {
-  @extend %chip;
-  background-color: cornflowerblue;
-}
-
-.aquamarine {
-  @extend %chip;
-  background-color: aquamarine;
-}
-
-.aqua {
-  @extend %chip;
-  background-color: aqua;
-}
-
-.lightskyblue {
-  @extend %chip;
-  background-color: lightskyblue;
-}
-
-.darkgreen {
-  @extend %chip;
-  background-color: darkgreen;
-}
-
-.darkolivegreen {
-  @extend %chip;
-  background-color: darkolivegreen;
-}
-
-.forestgreen {
-  @extend %chip;
-  background-color: forestgreen;
-}
-
-.olivedrab {
-  @extend %chip;
-  background-color: olivedrab;
-}
-
-.mediumaquamarine {
-  @extend %chip;
-  background-color: mediumaquamarine;
-}
-
-.limegreen {
-  @extend %chip;
-  background-color: limegreen;
-}
-
-.lightgreen {
-  @extend %chip;
-  background-color: lightgreen;
-}
-
-.lawngreen {
-  @extend %chip;
-  background-color: lawngreen;
-}
-
-.forestgreen {
-  @extend %chip;
-  background-color: forestgreen;
-}
-
-.lightcobaltblue {
-  @extend %chip;
-  background-color: #8aaae5;
-}
-
-.mustard {
-  @extend %chip;
-  background-color: #FFD95C;
-}
-
-.neoncarrot {
-  @extend %chip;
-  background-color: #FC9E4F;
-}
-
-.lightredochre {
-  @extend %chip;
-  background-color: #EF8354;
-}
-
-.vanilla {
-  @extend %chip;
-  background-color: #F2F3AE;
-}
-
-.vermilion {
-  @extend %chip;
-  background-color: #F4442E;
-}
-
-.richblack {
-  @extend %chip;
-  background-color: #020122;
-}
-
-.gunmetal {
-  @extend %chip;
-  background-color: #2D3142;
-}
-
-.silver {
-  @extend %chip;
-  background-color: silver;
-}
-
-
-.deepcarmine {
-  @extend %chip;
-  background-color: #A61C3C;
-}
-
-.tuscanbrown {
-  @extend %chip;
-  background-color: #694A38;
-}
-
-.yelloworange {
-  @extend %chip;
-  background-color: #F4AC45;
-}
-
-.cambridgeblue {
-  @extend %chip;
-  background-color: #92BFB1;
-}
-
-.bluejeans {
-  @extend %chip;
-  background-color: #5DA9E9;
-}
-
-.airforceblue {
-  @extend %chip;
-  background-color: #003F91;
-}
-
-.platinum {
-  @extend %chip;
-  background-color: #E5F4E3;
-  color: grey;
-}
-
-.midnight {
-  @extend %chip;
-  background-color: #6D326D;
-  .tooltiptext {
-    background-color: #6D326D;
-  }
-}
-
-.gold {
-  @extend %chip;
-  background-color: gold;
-  .tooltiptext {
-    background-color: gold;
-  }
-}

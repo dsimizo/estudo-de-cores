@@ -1,0 +1,19 @@
+.scheme {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem 0 2rem;
+}
+
+.div-color {
+  padding: 2rem 1rem;
+  flex: 1 200px;
+}
+
+.color-name {
+  text-align: center;
+}
+
+.color-hex {
+  text-align: center;
+  margin: 0;
+}
